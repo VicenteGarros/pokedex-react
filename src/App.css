@@ -1,0 +1,66 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #2e3140;
+  background: #15171e;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+}
+
+.logo span {
+  color: #ef4444;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+}
+
+.hero {
+  max-width: 36rem;
+  text-align: center;
+}
+
+.hero h2 {
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.hero p {
+  margin: 0 0 1.5rem;
+  color: #a1a1aa;
+}
+
+.hero code {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.9em;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  background: #2a2d38;
+  color: #fafafa;
+}
+
+.footer {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  color: #71717a;
+  font-size: 0.875rem;
+  border-top: 1px solid #2e3140;
+}
