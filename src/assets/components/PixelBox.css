@@ -1,0 +1,44 @@
+.pixel-box {
+    --pixel-border: #777777;
+    --pixel-divider: #ffffff;
+    --pixel-background: #ffffff;
+    --pixel-title: #292929;
+    --pixel-number: #676767;
+    --cut: 8px;
+    --border-size: 8px;
+
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 0px;
+    padding: var(--border-size);
+    background: var(--pixel-border);
+    /*Cor da borda*/
+
+    /* Cantos recortados em estilo pixel art */
+    clip-path: polygon(var(--cut) 0,
+            calc(100% - var(--cut)) 0,
+            calc(100% - var(--cut)) var(--cut),
+            100% var(--cut),
+            100% calc(100% - var(--cut)),
+            calc(100% - var(--cut)) calc(100% - var(--cut)),
+            calc(100% - var(--cut)) 100%,
+            var(--cut) 100%,
+            var(--cut) calc(100% - var(--cut)),
+            0 calc(100% - var(--cut)),
+            0 var(--cut),
+            var(--cut) var(--cut));
+
+    image-rendering: pixelated;
+
+    font-family: "Press Start 2P", monospace;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* Conteúdo interno */
+.pixel-box>* {
+    background: var(--pixel-background);
+    /*Fundo do componente*/
+    padding: 16px
+}

@@ -1,25 +1,23 @@
 import './App.css'
+import PixelBox from './assets/components/PixelBox.jsx'
 
 function App() {
   return (
     <div className="app">
-      <header className="header">
-        <h1 className="logo" aria-label="Pokédex">
-          Poké<span>dex</span>
-        </h1>
+      <header>
+
       </header>
 
       <main className="main">
-        <section className="hero">
-          <h2>Projeto base em React</h2>
-          <p>
-            Estrutura inicial com Vite. Edite <code>src/App.jsx</code> para
-            começar a montar a Pokédex.
-          </p>
+        <section className="hero"> { }
         </section>
+        <PixelBox />
+
       </main>
 
-      <footer className="footer">Feito com React + Vite</footer>
+      <footer>
+
+      </footer>
     </div>
   )
 }

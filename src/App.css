@@ -64,3 +64,21 @@
   font-size: 0.875rem;
   border-top: 1px solid #2e3140;
 }
+
+body {
+  background-image: url("assets/img/bgpokedex.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #1A1A2E;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto0gill, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
